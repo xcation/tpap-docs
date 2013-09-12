@@ -1,4 +1,7 @@
 var DOM = KISSY.DOM;
+
+var KCharts = KISSY.KCharts;
+
 var LineChart = KCharts.LineChart;
 var BarChart = KCharts.BarChart;
 var PieChart = KCharts.PieChart;
@@ -24,7 +27,7 @@ var linechart = new LineChart({
         }
     ],
     tip: {
-        template: "total：<span>{{y}}</span> yuan<br/>"
+        template: "total<span>{{y}}</span> yuan<br/>"
     }
 });
 

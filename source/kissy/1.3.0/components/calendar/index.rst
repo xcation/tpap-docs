@@ -224,7 +224,7 @@ demo 代码样例
 
     .. raw:: html
 
-        <iframe width="100%" height="260"  class="iframe-demo" src="http://tpap-docs.taegrid.taobao.com/kissy/1.3.0/component/calendar.php"></iframe>
+        <iframe width="100%" height="560"  class="iframe-demo" src="http://tpap-docs.taegrid.taobao.com/kissy/1.3.0/component/calendar/calendar.php"></iframe>
 
     **对应DEMO html/php的代码**
 

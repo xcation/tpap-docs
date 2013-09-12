@@ -69,8 +69,6 @@ node
    appendTo.rst
    prependTo.rst
    insertBefore.rst
-   before.rst
-   after.rst
    insertAfter.rst
    animate.rst
    stop.rst

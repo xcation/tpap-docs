@@ -13,7 +13,6 @@
 
 <div id="test1" style="width: 10px;
         height: 20px;
-        position: absolute;
         top: 20px;
         left: 120px;
         text-align: center;

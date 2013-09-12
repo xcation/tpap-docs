@@ -10,8 +10,6 @@ var anim = Anim(
         'border-style':"dashed",
         'width': '100px',
         'height': '50px',
-        'left': '600px',
-        'top': '285px',
         'opacity': '.5',
         'font-size': '48px',
         'padding': '30px 0',

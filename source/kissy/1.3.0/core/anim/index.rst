@@ -134,24 +134,23 @@ anim
 
 
 
-
-
 demo 代码样例
 -----------------------------------------------
 
 
-    **基本的Anim以及方法的示例**
+    **一个简单的demo例子**
 
     .. raw:: html
 
-        <iframe width="100%" height="70"  class="iframe-demo" src="http://tpap-docs.taegrid.taobao.com/kissy/1.3.0/core/anim/anim.php"></iframe>
+        <iframe width="100%" height="260"  class="iframe-demo" src="http://tpap-docs.taegrid.taobao.com/kissy/1.3.0/core/anim/anim.php"></iframe>
 
-     **对应DEMO html/php的代码**
 
-        .. literalinclude:: /raw/tpap/kissy/1.3.0/core/anim/anim.php
-           :language: html
+    **对应DEMO html/php的代码**
 
-     **对应DEMO javascript的代码**
+    .. literalinclude:: /raw/tpap/kissy/1.3.0/core/anim/anim.php
+        :language: html
 
-        .. literalinclude:: /raw/tpap/kissy/1.3.0/core/anim/anim.js
-           :language: javascript
+    **对应DEMO javascript的代码**
+
+    .. literalinclude:: /raw/tpap/kissy/1.3.0/core/anim/anim.js
+        :language: javascript
