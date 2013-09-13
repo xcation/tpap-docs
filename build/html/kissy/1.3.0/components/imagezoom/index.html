@@ -1,0 +1,490 @@
+
+<!doctype html>
+
+<html>
+<head>
+<meta charset="utf-8"/>
+
+<title>ImageZoom &mdash; OPENJS-v1.0 Document</title>
+
+<link rel="stylesheet" href="http://g.tbcdn.cn/kissy/k/1.3.1/css/dpl/base-min.css"/>
+<link rel="stylesheet" href="../../../../_static/kissy.css"/>
+    <link rel="stylesheet" href="http://a.tbcdn.cn/s/kissy/gallery/sphinx/1.1.3/pygments.css" type="text/css" />
+<link rel="shortcut icon" href="http://a.tbcdn.cn/s/kissy/favicon.ico" type="image/x-icon" />
+<!--<link href='http://fonts.googleapis.com/css?family=Philosopher' rel='stylesheet' type='text/css'>-->
+
+<script>
+    var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../../',
+        VERSION:     '',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE: true
+    };
+</script>
+    <script type="text/javascript" src="http://a.tbcdn.cn/s/kissy/gallery/sphinx/1.1.3/??jquery.js,underscore.js,doctools.js,searchtools.js"></script> 
+<script>
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-31470541-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+</script>
+</head>
+<body><h1 class="logo">
+    <a alt="KISSY" href="http://10.12.16.7/shop-team/products/openjs/build/html/">
+
+    <h2 style="width: 100%;
+margin: 0 auto;
+color: white;
+font-weight: bold;
+font-size: 44px;padding-left: 100px;"><!--TPAP(Third Party Access Policy)--></h2>
+
+</a></h1>
+<div id="header">
+
+
+    <ul class="navigation">
+        <li><a href="/">首页</a></li>
+    </ul>
+<div id="searchbox" class="searchbox">
+    <form class="search" action="../../../../search.html" method="get">
+        <input type="text" name="q" size="28" class="ipt"/>
+        <input type="submit" value="搜索" class="btn"/>
+        <input type="hidden" name="check_keywords" value="yes"/>
+        <input type="hidden" name="area" value="default"/>
+    </form>
+</div>
+
+</div>
+
+<div id="content">
+	<div  id="layout" class="layout grid-s6m0e7">
+			<div class="col-main">
+				<div class="main-wrap">
+                    
+
+<div class='related'>
+    <h3>导航</h3>
+    
+    <ul>
+    <li class="right" style="margin-right: 10px">
+      <a href="../../../../genindex.html" title="总目录"
+         accesskey="I">索引</a></li>
+    <li class="right" >
+      <a href="../../../../py-modindex.html" title="Python Module Index"
+         >模块</a> | </li>
+    <li><a href="../../../../index.html">OPENJS-v1.0 Document</a> &#187; </li> 
+    </ul>
+</div>
+					<div class="body">
+  <span class="target" id="module-imagezoom"></span><div class="section" id="imagezoom">
+<h1>ImageZoom<a class="headerlink" href="#imagezoom" title="永久链接至标题">¶</a></h1>
+<div class="line-block">
+<div class="line">这是一个图片放大镜控件.</div>
+<div class="line">支持单图和多图的放大。多图放大请看demo</div>
+</div>
+<div class="admonition hint">
+<p class="first admonition-title">提示</p>
+<p class="last">组件来源于 <a class="reference external" href="http://docs.kissyui.com/docs/html/api/component/imagezoom/">这里</a></p>
+</div>
+<div class="admonition important">
+<p class="first admonition-title">重要</p>
+<p>组件引入方式</p>
+<div class="last highlight-php"><div class="highlight"><pre><span class="x">&lt;cajamodules include=&quot;kissy/1.3.0/core,kissy/1.3.0/imagezoom&quot; /&gt;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id2">
+<h2>构造函数<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h2>
+<blockquote>
+<div><ul class="simple">
+<li><a class="reference internal" href="#imagezoom.ImageZoom" title="imagezoom.ImageZoom"><tt class="xref py py-class docutils literal"><span class="pre">ImageZoom</span></tt></a></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="id3">
+<h2>参数配置<a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h2>
+<blockquote>
+<div><ul class="simple">
+<li><a class="reference internal" href="#imagezoom.imageNode" title="imagezoom.imageNode"><tt class="xref py py-data docutils literal"><span class="pre">imageNode</span></tt></a></li>
+<li><a class="reference internal" href="#imagezoom.align" title="imagezoom.align"><tt class="xref py py-data docutils literal"><span class="pre">align</span></tt></a></li>
+<li><a class="reference internal" href="#imagezoom.type" title="imagezoom.type"><tt class="xref py py-data docutils literal"><span class="pre">type</span></tt></a></li>
+<li><a class="reference internal" href="#imagezoom.bigImageSrc" title="imagezoom.bigImageSrc"><tt class="xref py py-data docutils literal"><span class="pre">bigImageSrc</span></tt></a></li>
+<li><a class="reference internal" href="#imagezoom.bigImageWidth" title="imagezoom.bigImageWidth"><tt class="xref py py-data docutils literal"><span class="pre">bigImageWidth</span></tt></a></li>
+<li><a class="reference internal" href="#imagezoom.bigImageHeight" title="imagezoom.bigImageHeight"><tt class="xref py py-data docutils literal"><span class="pre">bigImageHeight</span></tt></a></li>
+<li><a class="reference internal" href="#imagezoom.width" title="imagezoom.width"><tt class="xref py py-data docutils literal"><span class="pre">width</span></tt></a></li>
+<li><a class="reference internal" href="#imagezoom.height" title="imagezoom.height"><tt class="xref py py-data docutils literal"><span class="pre">height</span></tt></a></li>
+<li><a class="reference internal" href="#imagezoom.hasZoom" title="imagezoom.hasZoom"><tt class="xref py py-data docutils literal"><span class="pre">hasZoom</span></tt></a></li>
+<li><a class="reference internal" href="#imagezoom.prefixCls" title="imagezoom.prefixCls"><tt class="xref py py-data docutils literal"><span class="pre">prefixCls</span></tt></a></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="id4">
+<h2>属性<a class="headerlink" href="#id4" title="永久链接至标题">¶</a></h2>
+<blockquote>
+<div><ul class="simple">
+<li><a class="reference internal" href="#imagezoom.bigImageWidth" title="imagezoom.bigImageWidth"><tt class="xref py py-data docutils literal"><span class="pre">bigImageWidth</span></tt></a></li>
+<li><a class="reference internal" href="#imagezoom.bigImageHeight" title="imagezoom.bigImageHeight"><tt class="xref py py-data docutils literal"><span class="pre">bigImageHeight</span></tt></a></li>
+<li><a class="reference internal" href="#imagezoom.imageSrc" title="imagezoom.imageSrc"><tt class="xref py py-data docutils literal"><span class="pre">imageSrc</span></tt></a></li>
+<li><a class="reference internal" href="#imagezoom.bigImageSrc" title="imagezoom.bigImageSrc"><tt class="xref py py-data docutils literal"><span class="pre">bigImageSrc</span></tt></a></li>
+<li><a class="reference internal" href="#imagezoom.hasZoom" title="imagezoom.hasZoom"><tt class="xref py py-data docutils literal"><span class="pre">hasZoom</span></tt></a></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="id5">
+<h2>实例方法<a class="headerlink" href="#id5" title="永久链接至标题">¶</a></h2>
+<blockquote>
+<div><ul class="simple">
+<li><a class="reference internal" href="#imagezoom.set" title="imagezoom.set"><tt class="xref py py-meth docutils literal"><span class="pre">set()</span></tt></a></li>
+<li><a class="reference internal" href="#imagezoom.get" title="imagezoom.get"><tt class="xref py py-meth docutils literal"><span class="pre">get()</span></tt></a></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="id6">
+<h2>事件<a class="headerlink" href="#id6" title="永久链接至标题">¶</a></h2>
+</div>
+<div class="section" id="id7">
+<h2>构造函数详情<a class="headerlink" href="#id7" title="永久链接至标题">¶</a></h2>
+<dl class="class">
+<dt id="imagezoom.ImageZoom">
+<em class="property">class </em><tt class="descclassname">imagezoom.</tt><tt class="descname">ImageZoom</tt><a class="headerlink" href="#imagezoom.ImageZoom" title="永久链接至目标">¶</a></dt>
+<dd><div class="line-block">
+<div class="line"><strong>ImageZoom</strong> (config)</div>
+</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">参数:</th><td class="field-body"><strong>config</strong> (<em>Object</em>) &#8211; 配置项, 详细见下方 <strong>参数配置详情</strong> .</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="id8">
+<h2>参数配置详情<a class="headerlink" href="#id8" title="永久链接至标题">¶</a></h2>
+<dl class="data">
+<dt id="imagezoom.imageNode">
+<tt class="descclassname">imagezoom.</tt><tt class="descname">imageNode</tt><a class="headerlink" href="#imagezoom.imageNode" title="永久链接至目标">¶</a></dt>
+<dd><p>{String | Object} - 必选, 小图元素选择器或小图元素.Object时为KissyDom，如：KISSY.all(&#8216;.standard&#8217;)</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="imagezoom.align">
+<tt class="descclassname">imagezoom.</tt><tt class="descname">align</tt><a class="headerlink" href="#imagezoom.align" title="永久链接至目标">¶</a></dt>
+<dd><p>{Object} - 可选, 放大镜对齐方式，格式为：{node: &#8216;.standard&#8217;,points: [&#8220;tr&#8221;,&#8221;tl&#8221;],offset: [10, 0]}</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="imagezoom.type">
+<tt class="descclassname">imagezoom.</tt><tt class="descname">type</tt><a class="headerlink" href="#imagezoom.type" title="永久链接至目标">¶</a></dt>
+<dd><p>{String} - 可选, 缩放显示类型, 默认是标准模式 ‘standard’, 或者内嵌模式 ‘inner’.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="imagezoom.bigImageSrc">
+<tt class="descclassname">imagezoom.</tt><tt class="descname">bigImageSrc</tt><a class="headerlink" href="#imagezoom.bigImageSrc" title="永久链接至目标">¶</a></dt>
+<dd><p>{String} - 可选, 大图路径, 为 ‘’ 时, 取触点上的 data-ks-imagezoom 属性值. 默认为 ‘’.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="imagezoom.bigImageWidth">
+<tt class="descclassname">imagezoom.</tt><tt class="descname">bigImageWidth</tt><a class="headerlink" href="#imagezoom.bigImageWidth" title="永久链接至目标">¶</a></dt>
+<dd><p>{Number} - 必选！ 大图宽度</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="imagezoom.bigImageHeight">
+<tt class="descclassname">imagezoom.</tt><tt class="descname">bigImageHeight</tt><a class="headerlink" href="#imagezoom.bigImageHeight" title="永久链接至目标">¶</a></dt>
+<dd><p>{Number} - 必选！ 大图高度</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="imagezoom.width">
+<tt class="descclassname">imagezoom.</tt><tt class="descname">width</tt><a class="headerlink" href="#imagezoom.width" title="永久链接至目标">¶</a></dt>
+<dd><p>{Number|String} - 可选, 放大区域宽度. 默认为 ‘auto’, 当取 ‘auto’ 时, 宽度取小图的宽度.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="imagezoom.height">
+<tt class="descclassname">imagezoom.</tt><tt class="descname">height</tt><a class="headerlink" href="#imagezoom.height" title="永久链接至目标">¶</a></dt>
+<dd><p>{Number|String} - 可选, 放大区域高度. 默认为 ‘auto’, 当取 ‘auto’ 时, 高度取小图的高度.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="imagezoom.hasZoom">
+<tt class="descclassname">imagezoom.</tt><tt class="descname">hasZoom</tt><a class="headerlink" href="#imagezoom.hasZoom" title="永久链接至目标">¶</a></dt>
+<dd><p>{Boolean} - 可选, 初始时是否显示放大效果. 默认为 true, 显示放大. 在多图切换时, 可重设该值来开启或关闭显示放大功能. 如果多个图都不需要放大显示, ImageZoom 不会生成任何东西.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="imagezoom.prefixCls">
+<tt class="descclassname">imagezoom.</tt><tt class="descname">prefixCls</tt><a class="headerlink" href="#imagezoom.prefixCls" title="永久链接至目标">¶</a></dt>
+<dd><p>{String} - 可选, 样式css名前缀。isv请使用‘taeapp’开头的否则会被过滤掉，如本例的：‘taeapp-myzoom-’ 。样式控制请参照
+样式说明：xxxx-imagezoom-lens 小图蒙板样式</p>
+<blockquote>
+<div>xxxx-imagezoom-viewer 放大镜样式
+xxxx-imagezoom-icon 放大镜图标样式</div></blockquote>
+</dd></dl>
+
+</div>
+<div class="section" id="id9">
+<h2>属性详情<a class="headerlink" href="#id9" title="永久链接至标题">¶</a></h2>
+<dl class="data">
+<dt>
+<tt class="descclassname">imagezoom.</tt><tt class="descname">bigImageWidth</tt></dt>
+<dd><p>{Number} - 大图宽度</p>
+</dd></dl>
+
+<dl class="data">
+<dt>
+<tt class="descclassname">imagezoom.</tt><tt class="descname">bigImageHeight</tt></dt>
+<dd><p>{Number} - 大图高度</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="imagezoom.imageSrc">
+<tt class="descclassname">imagezoom.</tt><tt class="descname">imageSrc</tt><a class="headerlink" href="#imagezoom.imageSrc" title="永久链接至目标">¶</a></dt>
+<dd><p>{String} - 小图路径</p>
+</dd></dl>
+
+<dl class="data">
+<dt>
+<tt class="descclassname">imagezoom.</tt><tt class="descname">bigImageSrc</tt></dt>
+<dd><p>{String} - 大图路径</p>
+</dd></dl>
+
+<dl class="data">
+<dt>
+<tt class="descclassname">imagezoom.</tt><tt class="descname">hasZoom</tt></dt>
+<dd><p>{String} - 初始时是否显示放大效果</p>
+</dd></dl>
+
+</div>
+<div class="section" id="id10">
+<h2>方法详情<a class="headerlink" href="#id10" title="永久链接至标题">¶</a></h2>
+<dl class="method">
+<dt id="imagezoom.set">
+<tt class="descclassname">imagezoom.</tt><tt class="descname">set</tt><big>(</big><big>)</big><a class="headerlink" href="#imagezoom.set" title="永久链接至目标">¶</a></dt>
+<dd><div class="line-block">
+<div class="line"><strong>set</strong> (attr,value)</div>
+<div class="line">设置属性值</div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="imagezoom.get">
+<tt class="descclassname">imagezoom.</tt><tt class="descname">get</tt><big>(</big><big>)</big><a class="headerlink" href="#imagezoom.get" title="永久链接至目标">¶</a></dt>
+<dd><div class="line-block">
+<div class="line"><strong>get</strong> (attr)</div>
+<div class="line">获取属性值</div>
+</div>
+</dd></dl>
+
+</div>
+<div class="section" id="demo">
+<h2>demo 代码样例<a class="headerlink" href="#demo" title="永久链接至标题">¶</a></h2>
+<blockquote>
+<div><p><strong>三个简单的demo例子</strong></p>
+<iframe width="100%" height="560"  class="iframe-demo" src="http://tpap-docs.taegrid.taobao.com/kissy/1.3.0/component/imagezoom/imagezoom.php"></iframe><p><strong>对应DEMO html/php的代码</strong></p>
+<div class="highlight-html"><div class="highlight"><pre><span class="c">&lt;!--页头公共资源引入--&gt;</span>
+<span class="cp">&lt;? include(&quot;../common/head.php&quot;);?&gt;</span>
+
+<span class="c">&lt;!--</span>
+<span class="c">    需要测试的dom结构，注意，最外层&lt;div class=&quot;J_TScriptedModule&quot; data-componentid=&quot;uniqueSign&quot;&gt; 的class和为属性不可修改</span>
+<span class="c">    用户的javascript理论上只可以作用到这个dom下面，不可以&quot;越界&quot;</span>
+<span class="c">--&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">href=</span><span class="s">&quot;/assets/stylesheets/imagezoom.css&quot;</span> <span class="nt">/&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;J_TScriptedModule&quot;</span> <span class="na">data-componentid=</span><span class="s">&quot;uniqueSign&quot;</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;demo&quot;</span><span class="nt">&gt;</span>
+		<span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">&quot;taeapp-standard&quot;</span> <span class="na">src=</span><span class="s">&quot;http://img03.taobaocdn.com/bao/uploaded/i3/T1fftwXf8jXXX7ps79_073021.jpg_310x310.jpg&quot;</span> <span class="na">style=</span><span class="s">&quot;width:200px;height:200px;&quot;</span> <span class="nt">/&gt;</span>
+		<span class="nt">&lt;br/&gt;</span>
+		<span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">&quot;taeapp-imgList&quot;</span><span class="nt">&gt;</span>
+			<span class="nt">&lt;li&gt;</span>
+				<span class="nt">&lt;img</span> <span class="na">data-bigimagewidth=</span><span class="s">&quot;700&quot;</span> <span class="na">data-bigimageheight=</span><span class="s">&quot;700&quot;</span> <span class="na">data-has-zoom=</span><span class="s">&quot;true&quot;</span> <span class="na">data-ks-imagezoom=</span><span class="s">&quot;http://img03.taobaocdn.com/bao/uploaded/i3/T1fftwXf8jXXX7ps79_073021.jpg&quot;</span> <span class="na">src=</span><span class="s">&quot;http://img03.taobaocdn.com/bao/uploaded/i3/T1fftwXf8jXXX7ps79_073021.jpg_40x40.jpg&quot;</span><span class="nt">&gt;</span>
+			<span class="nt">&lt;/li&gt;</span>
+			<span class="nt">&lt;li&gt;</span>
+				<span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;http://img06.taobaocdn.com/imgextra/i6/354823861/T2vWNlXbFdXXXXXXXX_!!354823861.jpg_40x40.jpg&quot;</span> <span class="na">data-bigimagewidth=</span><span class="s">&quot;700&quot;</span> <span class="na">data-bigimageheight=</span><span class="s">&quot;700&quot;</span> <span class="na">data-has-zoom=</span><span class="s">&quot;true&quot;</span> <span class="na">data-ks-imagezoom=</span><span class="s">&quot;http://img06.taobaocdn.com/imgextra/i6/354823861/T2vWNlXbFdXXXXXXXX_!!354823861.jpg&quot;</span><span class="nt">&gt;</span>
+			<span class="nt">&lt;/li&gt;</span>
+			<span class="nt">&lt;li&gt;</span>
+				<span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;http://img05.taobaocdn.com/imgextra/i5/T1DERIXmXsXXa26X.Z_031259.jpg_40x40.jpg&quot;</span> <span class="na">data-has-zoom=</span><span class="s">&quot;true&quot;</span> <span class="na">data-bigimagewidth=</span><span class="s">&quot;700&quot;</span> <span class="na">data-bigimageheight=</span><span class="s">&quot;700&quot;</span> <span class="na">data-ks-imagezoom=</span><span class="s">&quot;http://img05.taobaocdn.com/imgextra/i5/T1DERIXmXsXXa26X.Z_031259.jpg&quot;</span> <span class="nt">&gt;</span>
+			<span class="nt">&lt;/li&gt;</span>
+		<span class="nt">&lt;/ul&gt;</span>
+	<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="c">&lt;!--模块初始化的包配置，都很熟悉了--&gt;</span>
+<span class="nt">&lt;script </span><span class="na">type=</span><span class="s">&quot;text/javascript&quot;</span><span class="nt">&gt;</span>
+
+     <span class="nx">cajaConfig</span><span class="o">=</span><span class="p">{</span><span class="c1">//配置下你需要引入的模块名称，最后会被use到</span>
+         <span class="nx">modules</span><span class="o">:</span><span class="s2">&quot;openjs/kissy/1.3.0/core,openjs/kissy/1.3.0/imagezoom&quot;</span>
+     <span class="p">}</span>
+
+<span class="nt">&lt;/script&gt;</span>
+
+<span class="c">&lt;!--这里是将自己的js让服务端编译一下，配置下服务端的php路径和自己的js即可，注意路径--&gt;</span>
+<span class="cp">&lt;?</span>
+<span class="cp">    $jsurl=&quot;testcase/1.3.0/imagezoom.js&quot;;//注意路径</span>
+<span class="cp">    $jsservice=&quot;../common/cajoled_service.php&quot;;//注意路径</span>
+<span class="cp">    include(&quot;../common/foot.php&quot;);//引入foot</span>
+<span class="cp">?&gt;</span>
+</pre></div>
+</div>
+<p><strong>对应DEMO javascript的代码</strong></p>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="kd">var</span> <span class="nx">ImageZoom</span> <span class="o">=</span> <span class="nx">KISSY</span><span class="p">.</span><span class="nx">ImageZoom</span><span class="p">;</span><span class="c1">//ImageZoom组件默认在KISSY的命名空间下</span>
+<span class="kd">var</span> <span class="nx">iz</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">ImageZoom</span><span class="p">({</span>
+		<span class="nx">prefixCls</span><span class="o">:</span><span class="s1">&#39;taeapp-myzoom-&#39;</span><span class="p">,</span>
+        <span class="nx">imageNode</span><span class="o">:</span><span class="s1">&#39;.taeapp-standard&#39;</span><span class="p">,</span>
+		<span class="c1">// 设置与小图左对齐</span>
+        <span class="nx">align</span><span class="o">:</span><span class="p">{</span>
+            <span class="nx">node</span><span class="o">:</span> <span class="s1">&#39;.taeapp-standard&#39;</span><span class="p">,</span>
+            <span class="nx">points</span><span class="o">:</span> <span class="p">[</span><span class="s2">&quot;tr&quot;</span><span class="p">,</span><span class="s2">&quot;tl&quot;</span><span class="p">],</span>
+            <span class="nx">offset</span><span class="o">:</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span>
+        <span class="p">},</span>
+		<span class="nx">type</span><span class="o">:</span><span class="s1">&#39;standard&#39;</span><span class="p">,</span>
+        <span class="nx">bigImageSrc</span><span class="o">:</span> <span class="s2">&quot;http://img03.taobaocdn.com/bao/uploaded/i3/T1fftwXf8jXXX7ps79_073021.jpg&quot;</span><span class="p">,</span>
+        <span class="nx">bigImageWidth</span><span class="o">:</span><span class="mi">900</span><span class="p">,</span>
+        <span class="nx">bigImageHeight</span><span class="o">:</span><span class="mi">900</span><span class="p">,</span>
+	    <span class="nx">width</span><span class="o">:</span><span class="mi">300</span><span class="p">,</span>
+		<span class="nx">height</span><span class="o">:</span><span class="mi">300</span><span class="p">,</span>
+		<span class="nx">hasZoom</span><span class="o">:</span><span class="kc">true</span>
+    <span class="p">}</span>
+<span class="p">);</span>
+
+
+
+<span class="nx">KISSY</span><span class="p">.</span><span class="nx">Event</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s1">&#39;.taeapp-imgList img&#39;</span><span class="p">,</span><span class="s1">&#39;click&#39;</span><span class="p">,</span><span class="kd">function</span><span class="p">(</span><span class="nx">e</span><span class="p">){</span>
+	<span class="kd">var</span> <span class="nx">data</span> <span class="o">=</span> <span class="nx">KISSY</span><span class="p">.</span><span class="nx">DOM</span><span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="k">this</span><span class="p">,</span> <span class="s1">&#39;data-ks-imagezoom&#39;</span><span class="p">);</span>
+	<span class="nx">iz</span><span class="p">.</span><span class="nx">set</span><span class="p">(</span><span class="s1">&#39;hasZoom&#39;</span><span class="p">,</span> <span class="nx">KISSY</span><span class="p">.</span><span class="nx">DOM</span><span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="k">this</span><span class="p">,</span> <span class="s1">&#39;data-has-zoom&#39;</span><span class="p">));</span>
+	<span class="nx">iz</span><span class="p">.</span><span class="nx">set</span><span class="p">(</span><span class="s1">&#39;imageSrc&#39;</span><span class="p">,</span> <span class="nx">data</span> <span class="o">+</span> <span class="s1">&#39;_310x310.jpg&#39;</span><span class="p">);</span>
+	<span class="k">if</span> <span class="p">(</span><span class="nx">data</span> <span class="o">&amp;&amp;</span> <span class="nx">iz</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s1">&#39;hasZoom&#39;</span><span class="p">))</span> <span class="p">{</span>
+		<span class="nx">iz</span><span class="p">.</span><span class="nx">set</span><span class="p">(</span><span class="s1">&#39;bigImageSrc&#39;</span><span class="p">,</span> <span class="nx">data</span><span class="p">);</span>
+		<span class="nx">iz</span><span class="p">.</span><span class="nx">set</span><span class="p">(</span><span class="s2">&quot;bigImageWidth&quot;</span><span class="p">,</span> <span class="nb">parseInt</span><span class="p">(</span><span class="nx">KISSY</span><span class="p">.</span><span class="nx">DOM</span><span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="k">this</span><span class="p">,</span> <span class="s1">&#39;data-bigimagewidth&#39;</span><span class="p">)));</span>
+		<span class="nx">iz</span><span class="p">.</span><span class="nx">set</span><span class="p">(</span><span class="s2">&quot;bigImageHeight&quot;</span><span class="p">,</span> <span class="nb">parseInt</span><span class="p">(</span><span class="nx">KISSY</span><span class="p">.</span><span class="nx">DOM</span><span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="k">this</span><span class="p">,</span> <span class="s1">&#39;data-bigimageheight&#39;</span><span class="p">)));</span>
+	<span class="p">}</span>
+<span class="p">});</span>
+</pre></div>
+</div>
+<p><strong>对应DEMO css的代码</strong></p>
+<div class="highlight-css"><div class="highlight"><pre><span class="nc">.taeapp-myzoom-imagezoom-lens</span><span class="p">{</span>
+	<span class="k">background</span><span class="o">:</span> <span class="sx">url(http://img04.taobaocdn.com/tps/i4/T12pdtXaldXXXXXXXX-2-2.png)</span> <span class="k">repeat</span><span class="p">;</span>
+	<span class="k">cursor</span><span class="o">:</span> <span class="n">move</span><span class="p">;</span>
+	<span class="k">position</span><span class="o">:</span> <span class="k">absolute</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.taeapp-myzoom-imagezoom-viewer</span><span class="p">{</span>
+	<span class="k">border</span><span class="o">:</span> <span class="m">1px</span> <span class="k">solid</span> <span class="m">#808080</span><span class="p">;</span>
+	<span class="k">text-align</span><span class="o">:</span> <span class="k">center</span><span class="p">;</span>
+	<span class="k">position</span><span class="o">:</span> <span class="k">absolute</span><span class="p">;</span>
+	<span class="k">left</span><span class="o">:</span> <span class="m">-9999px</span><span class="p">;</span>
+	<span class="k">top</span><span class="o">:</span> <span class="m">-9999px</span><span class="p">;</span>
+	<span class="k">overflow</span><span class="o">:</span> <span class="k">hidden</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.taeapp-myzoom-imagezoom-icon</span> <span class="p">{</span>
+	<span class="k">display</span><span class="o">:</span> <span class="k">block</span><span class="p">;</span>
+	<span class="k">position</span><span class="o">:</span> <span class="k">relative</span><span class="p">;</span>
+	<span class="k">top</span><span class="o">:</span> <span class="m">-28px</span><span class="p">;</span>
+	<span class="k">left</span><span class="o">:</span> <span class="m">175px</span><span class="p">;</span>
+	<span class="k">height</span><span class="o">:</span> <span class="m">23px</span><span class="p">;</span>
+	<span class="k">width</span><span class="o">:</span> <span class="m">23px</span><span class="p">;</span>
+	<span class="k">border-right</span><span class="o">:</span> <span class="m">1px</span> <span class="k">solid</span> <span class="m">#999</span><span class="p">;</span>
+	<span class="k">border-bottom</span><span class="o">:</span> <span class="m">1px</span> <span class="k">solid</span> <span class="m">#999</span><span class="p">;</span>
+	<span class="k">background</span><span class="o">:</span> <span class="sx">url(http://img02.taobaocdn.com/tps/i2/T1uJNuXX8tXXXXXXXX-23-23.png)</span> <span class="k">no-repeat</span> <span class="k">scroll</span> <span class="k">left</span> <span class="k">top</span> <span class="k">transparent</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div></blockquote>
+</div>
+</div>
+
+</div>
+                    
+
+<div class='related'>
+    <h3>导航</h3>
+    
+    <ul>
+    <li class="right" style="margin-right: 10px">
+      <a href="../../../../genindex.html" title="总目录"
+         accesskey="I">索引</a></li>
+    <li class="right" >
+      <a href="../../../../py-modindex.html" title="Python Module Index"
+         >模块</a> | </li>
+    <li><a href="../../../../index.html">OPENJS-v1.0 Document</a> &#187; </li> 
+    </ul>
+</div>
+					<div id="disqus_thread"></div>
+<script>
+    if(true && window.localStorage.getItem("kissy-commment")!="0"){
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'kissy-docs'; // required: replace example with your forum shortname
+
+    // The following are highly recommended additional parameters. Remove the slashes in front to use.
+     //var disqus_identifier = '/anim';
+     //var disqus_url = window.location;
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+    }
+</script>
+<!--<div id="google-search-box">
+    <div id="cse" style="width: 100%;">Loading</div>
+    <script>
+        if(window.location.hostname.indexOf("kissyui.com")!=-1){
+            document.write('<script src="http://www.google.com/jsapi" type="text/javascript"><'+'/script>');
+        }
+    </script>
+    <script>
+        if(window.location.hostname.indexOf("kissyui.com")!=-1){
+            google.load('search', '1', {language : 'zh-CN', style : google.loader.themes.MINIMALIST});
+            google.setOnLoadCallback(function() {
+                var customSearchControl = new google.search.CustomSearchControl('012347804910294994683:n4uzb24gqdm');
+                customSearchControl.setResultSetSize(google.search.Search.FILTERED_CSE_RESULTSET);
+                customSearchControl.draw('cse');
+            }, true);
+        }
+    </script>
+</div>-->
+				</div>
+			</div>
+		
+    <div class="col-sub">
+
+<div class="s-box">
+    <div class="s-box-bd">
+        <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../index.html">KISSY</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../alimap/index.html">阿里地图</a></li>
+</ul>
+
+    </div>
+</div>
+    </div>
+    <div class="col-extra">
+        
+
+    </div>
+	</div>
+    <script>
+        if(!$.trim($(".col-extra").html())){
+            $("#layout").removeClass("grid-s6m0e7").addClass("grid-s6m0");
+        }
+    </script>
+</div>
+<div id="footer">
+    &copy; Copyright 2013~2023,  Created by TPAP-Team
+</div>
+</body>
+</html>
