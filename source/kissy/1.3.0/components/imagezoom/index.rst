@@ -74,7 +74,7 @@ ImageZoom
 
 .. data:: imageNode
 
-    {String | Object} - 必选, 小图元素选择器或小图元素.Object时为KissyDom，如：KISSY.all('.standard')
+    {String} - 必选, 小图元素选择器.
 
 .. data:: align
 
