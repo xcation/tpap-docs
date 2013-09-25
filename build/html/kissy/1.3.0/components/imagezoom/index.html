@@ -295,154 +295,72 @@ xxxx-imagezoom-icon 放大镜图标样式</div></blockquote>
 <blockquote>
 <div><p><strong>三个简单的demo例子</strong></p>
 <iframe width="100%" height="560"  class="iframe-demo" src="http://tpap-docs.taegrid.taobao.com/kissy/1.3.0/component/imagezoom/imagezoom.php"></iframe><p><strong>对应DEMO html/php的代码</strong></p>
-<div class="highlight-html"><div class="highlight"><pre><span class="c">&lt;!--页头公共资源引入--&gt;</span>
-<span class="cp">&lt;? include(&quot;../common/head.php&quot;);?&gt;</span>
+<div class="highlight-html"><div class="highlight"><pre><span class="nt">&lt;cajamodules</span> <span class="na">include=</span><span class="s">&quot;kissy/1.3.0/core,kissy/1.3.0/imagezoom&quot;</span> <span class="nt">/&gt;</span> 
 
-<span class="c">&lt;!--</span>
-<span class="c">    需要测试的dom结构，注意，最外层&lt;div class=&quot;J_TScriptedModule&quot; data-componentid=&quot;uniqueSign&quot;&gt; 的class和为属性不可修改</span>
-<span class="c">    用户的javascript理论上只可以作用到这个dom下面，不可以&quot;越界&quot;</span>
-<span class="c">--&gt;</span>
-<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">href=</span><span class="s">&quot;/assets/stylesheets/imagezoom.css&quot;</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">&quot;/kissy/1.3.0/component/imagezoom/imagezoom.js&quot;</span><span class="nt">&gt;&lt;/script&gt;</span>
 
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;J_TScriptedModule&quot;</span> <span class="na">data-componentid=</span><span class="s">&quot;uniqueSign&quot;</span><span class="nt">&gt;</span>
-	<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;demo&quot;</span><span class="nt">&gt;</span>
-		<span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">&quot;taeapp-standard&quot;</span> <span class="na">src=</span><span class="s">&quot;http://img03.taobaocdn.com/bao/uploaded/i3/T1fftwXf8jXXX7ps79_073021.jpg_310x310.jpg&quot;</span> <span class="na">style=</span><span class="s">&quot;width:200px;height:200px;&quot;</span> <span class="nt">/&gt;</span>
-		<span class="nt">&lt;br/&gt;</span>
-		<span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">&quot;taeapp-imgList&quot;</span><span class="nt">&gt;</span>
-			<span class="nt">&lt;li&gt;</span>
-				<span class="nt">&lt;img</span> <span class="na">data-bigimagewidth=</span><span class="s">&quot;700&quot;</span> <span class="na">data-bigimageheight=</span><span class="s">&quot;700&quot;</span> <span class="na">data-has-zoom=</span><span class="s">&quot;true&quot;</span> <span class="na">data-ks-imagezoom=</span><span class="s">&quot;http://img03.taobaocdn.com/bao/uploaded/i3/T1fftwXf8jXXX7ps79_073021.jpg&quot;</span> <span class="na">src=</span><span class="s">&quot;http://img03.taobaocdn.com/bao/uploaded/i3/T1fftwXf8jXXX7ps79_073021.jpg_40x40.jpg&quot;</span><span class="nt">&gt;</span>
-			<span class="nt">&lt;/li&gt;</span>
-			<span class="nt">&lt;li&gt;</span>
-				<span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;http://img06.taobaocdn.com/imgextra/i6/354823861/T2vWNlXbFdXXXXXXXX_!!354823861.jpg_40x40.jpg&quot;</span> <span class="na">data-bigimagewidth=</span><span class="s">&quot;700&quot;</span> <span class="na">data-bigimageheight=</span><span class="s">&quot;700&quot;</span> <span class="na">data-has-zoom=</span><span class="s">&quot;true&quot;</span> <span class="na">data-ks-imagezoom=</span><span class="s">&quot;http://img06.taobaocdn.com/imgextra/i6/354823861/T2vWNlXbFdXXXXXXXX_!!354823861.jpg&quot;</span><span class="nt">&gt;</span>
-			<span class="nt">&lt;/li&gt;</span>
-			<span class="nt">&lt;li&gt;</span>
-				<span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;http://img05.taobaocdn.com/imgextra/i5/T1DERIXmXsXXa26X.Z_031259.jpg_40x40.jpg&quot;</span> <span class="na">data-has-zoom=</span><span class="s">&quot;true&quot;</span> <span class="na">data-bigimagewidth=</span><span class="s">&quot;700&quot;</span> <span class="na">data-bigimageheight=</span><span class="s">&quot;700&quot;</span> <span class="na">data-ks-imagezoom=</span><span class="s">&quot;http://img05.taobaocdn.com/imgextra/i5/T1DERIXmXsXXa26X.Z_031259.jpg&quot;</span> <span class="nt">&gt;</span>
-			<span class="nt">&lt;/li&gt;</span>
-		<span class="nt">&lt;/ul&gt;</span>
-	<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">&quot;/kissy/1.3.0/component/imagezoom/imagezoom.css&quot;</span> <span class="na">rel=</span><span class="s">&quot;stylesheet&quot;</span><span class="nt">/&gt;</span>
+
+<span class="nt">&lt;h1&gt;</span>ImageZoom DEMO<span class="nt">&lt;/h1&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;demo&quot;</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">&quot;taeapp-standard&quot;</span> <span class="na">src=</span><span class="s">&quot;http://img03.taobaocdn.com/bao/uploaded/i3/T1fftwXf8jXXX7ps79_073021.jpg_310x310.jpg&quot;</span> <span class="na">style=</span><span class="s">&quot;width:200px;height:200px;&quot;</span> <span class="nt">/&gt;</span>
+	<span class="nt">&lt;br/&gt;</span>
+	<span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">&quot;taeapp-imgList&quot;</span><span class="nt">&gt;</span>
+		<span class="nt">&lt;li&gt;</span>
+			<span class="nt">&lt;img</span> <span class="na">data-bigimagewidth=</span><span class="s">&quot;700&quot;</span> <span class="na">data-bigimageheight=</span><span class="s">&quot;700&quot;</span> <span class="na">data-has-zoom=</span><span class="s">&quot;true&quot;</span> <span class="na">data-ks-imagezoom=</span><span class="s">&quot;http://img03.taobaocdn.com/bao/uploaded/i3/T1fftwXf8jXXX7ps79_073021.jpg&quot;</span> <span class="na">src=</span><span class="s">&quot;http://img03.taobaocdn.com/bao/uploaded/i3/T1fftwXf8jXXX7ps79_073021.jpg_40x40.jpg&quot;</span><span class="nt">&gt;</span>
+		<span class="nt">&lt;/li&gt;</span>
+		<span class="nt">&lt;li&gt;</span>
+			<span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;http://img06.taobaocdn.com/imgextra/i6/354823861/T2vWNlXbFdXXXXXXXX_!!354823861.jpg_40x40.jpg&quot;</span> <span class="na">data-bigimagewidth=</span><span class="s">&quot;700&quot;</span> <span class="na">data-bigimageheight=</span><span class="s">&quot;700&quot;</span> <span class="na">data-has-zoom=</span><span class="s">&quot;true&quot;</span> <span class="na">data-ks-imagezoom=</span><span class="s">&quot;http://img06.taobaocdn.com/imgextra/i6/354823861/T2vWNlXbFdXXXXXXXX_!!354823861.jpg&quot;</span><span class="nt">&gt;</span>
+		<span class="nt">&lt;/li&gt;</span>
+		<span class="nt">&lt;li&gt;</span>
+			<span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;http://img05.taobaocdn.com/imgextra/i5/T1DERIXmXsXXa26X.Z_031259.jpg_40x40.jpg&quot;</span> <span class="na">data-has-zoom=</span><span class="s">&quot;true&quot;</span> <span class="na">data-bigimagewidth=</span><span class="s">&quot;700&quot;</span> <span class="na">data-bigimageheight=</span><span class="s">&quot;700&quot;</span> <span class="na">data-ks-imagezoom=</span><span class="s">&quot;http://img05.taobaocdn.com/imgextra/i5/T1DERIXmXsXXa26X.Z_031259.jpg&quot;</span> <span class="nt">&gt;</span>
+		<span class="nt">&lt;/li&gt;</span>
+	<span class="nt">&lt;/ul&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
 
-<span class="c">&lt;!--模块初始化的包配置，都很熟悉了--&gt;</span>
-<span class="nt">&lt;script </span><span class="na">type=</span><span class="s">&quot;text/javascript&quot;</span><span class="nt">&gt;</span>
-
-     <span class="nx">cajaConfig</span><span class="o">=</span><span class="p">{</span><span class="c1">//配置下你需要引入的模块名称，最后会被use到</span>
-         <span class="nx">modules</span><span class="o">:</span><span class="s2">&quot;openjs/kissy/1.3.0/core,openjs/kissy/1.3.0/imagezoom&quot;</span>
-     <span class="p">}</span>
-
-<span class="nt">&lt;/script&gt;</span>
-
-<span class="c">&lt;!--这里是将自己的js让服务端编译一下，配置下服务端的php路径和自己的js即可，注意路径--&gt;</span>
-<span class="cp">&lt;?</span>
-<span class="cp">    $jsurl=&quot;testcase/1.3.0/imagezoom.js&quot;;//注意路径</span>
-<span class="cp">    $jsservice=&quot;../common/cajoled_service.php&quot;;//注意路径</span>
-<span class="cp">    include(&quot;../common/foot.php&quot;);//引入foot</span>
-<span class="cp">?&gt;</span>
+log here:
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;divLog&quot;</span><span class="nt">&gt;&lt;/div&gt;</span>
 </pre></div>
 </div>
 <p><strong>对应DEMO javascript的代码</strong></p>
-<div class="highlight-javascript"><div class="highlight"><pre><span class="cm">/**</span>
-<span class="cm"> * @fileOverview ImageZoom组件的安全适配器 </span>
-<span class="cm"> * by 炫幻星 - 好评有奖(songhujing2009)</span>
-<span class="cm"> */</span>
-<span class="nx">KISSY</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="kd">function</span> <span class="p">(</span><span class="nx">S</span><span class="p">,</span> <span class="nx">ImageZoom</span><span class="p">)</span> <span class="p">{</span>
-    <span class="kd">var</span> <span class="nx">DOM</span> <span class="o">=</span> <span class="nx">S</span><span class="p">.</span><span class="nx">DOM</span><span class="p">,</span>
-        <span class="nx">Event</span> <span class="o">=</span> <span class="nx">S</span><span class="p">.</span><span class="nx">Event</span><span class="p">;</span>
-    <span class="cm">/**</span>
-<span class="cm">     * 提供一个init方法，名字任取，最后模块return即可。 用来初始化适配器的</span>
-<span class="cm">     * 初始化方法需要返回一个函数，用来为每个沙箱环境提供适配对象。</span>
-<span class="cm">     * ps: 页面中可能会有多个安全沙箱环境。init方法内执行的可以理解为所有沙箱共享的一些内容对象，主要提供最原始的安全适配对象和方法。(执行一次,所有沙箱共享)</span>
-<span class="cm">     *     init返回的函数可以理解是为每个沙箱提供的安全适配对象。(执行多次，每个沙箱对对象的操作不影响其他沙箱)</span>
-<span class="cm">     *     总结：可以理解为KISSY在frameGroup初始化的时候是一个对象，然后会copy多份，分别放到不同的沙箱环境中去执行。每个copy相互之间不影响</span>
-<span class="cm">     * @param frameGroup 页面中的沙箱环境，frame即为沙箱，frameGroup为沙箱组。沙箱的公共环境</span>
-<span class="cm">     * @returns {Function} 工厂获取实际的适配对象</span>
-<span class="cm">     */</span>
-    <span class="kd">function</span> <span class="nx">init</span><span class="p">(</span><span class="nx">frameGroup</span><span class="p">)</span> <span class="p">{</span>
-        <span class="cm">/**</span>
-<span class="cm">         * 因为KISSY的组件构造函数只有一个，后面可能会对构造函数本身做修改</span>
-<span class="cm">         * 所以这里可以写一个SafeConstruector，相当于继承KISSY的组件，并且显示的声明要开放哪些api</span>
-<span class="cm">         */</span>
-        <span class="kd">function</span> <span class="nx">SafeImageZoom</span><span class="p">(</span><span class="nx">config</span><span class="p">)</span> <span class="p">{</span>
-            <span class="k">this</span><span class="p">.</span><span class="nx">inner</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">ImageZoom</span><span class="p">(</span><span class="nx">config</span><span class="p">);</span>
-        <span class="p">}</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="kd">function</span> <span class="nx">log</span><span class="p">(</span><span class="nx">s</span><span class="p">){</span>
+	<span class="nx">KISSY</span><span class="p">.</span><span class="nx">DOM</span><span class="p">.</span><span class="nx">query</span><span class="p">(</span><span class="s2">&quot;.divLog&quot;</span><span class="p">)[</span><span class="mi">0</span><span class="p">].</span><span class="nx">innerHTML</span> <span class="o">+=</span> <span class="s1">&#39;&lt;br/&gt;&#39;</span><span class="o">+</span><span class="nx">s</span><span class="p">;</span>
+<span class="p">}</span>
 
-		<span class="c1">//一般方法</span>
-        <span class="nx">SafeImageZoom</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">set</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">attr</span><span class="p">,</span><span class="nx">val</span><span class="p">)</span> <span class="p">{</span>
-			<span class="cm">/**</span>
-<span class="cm">			 * 如果是imagesrc 或 bigimagesrc 需要验证url白名单</span>
-<span class="cm">			 */</span>
-			<span class="kd">var</span> <span class="nx">chkurl</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;&#39;</span><span class="o">+</span><span class="nx">attr</span><span class="p">).</span><span class="nx">toLowerCase</span><span class="p">()</span><span class="o">==</span><span class="s1">&#39;imagesrc&#39;</span> <span class="o">||</span> <span class="p">(</span><span class="s1">&#39;&#39;</span><span class="o">+</span><span class="nx">attr</span><span class="p">).</span><span class="nx">toLowerCase</span><span class="p">()</span><span class="o">==</span><span class="s1">&#39;bigimagesrc&#39;</span><span class="p">;</span>
-            <span class="k">this</span><span class="p">.</span><span class="nx">inner</span><span class="p">.</span><span class="nx">set</span><span class="p">(</span><span class="nx">attr</span> <span class="p">,</span> <span class="nx">chkurl</span> <span class="o">?</span> <span class="p">(</span><span class="nx">cajaAFTB</span><span class="p">.</span><span class="nx">rewriteURL</span><span class="p">(</span><span class="nx">val</span><span class="p">,</span> <span class="kc">null</span><span class="p">,</span> <span class="kc">null</span><span class="p">,</span> <span class="p">{</span><span class="nx">XML_ATTR</span><span class="o">:</span> <span class="s2">&quot;href&quot;</span><span class="p">})</span> <span class="o">?</span> <span class="nx">val</span> <span class="o">:</span> <span class="s1">&#39;&#39;</span><span class="p">)</span> <span class="o">:</span> <span class="nx">val</span><span class="p">);</span>
-        <span class="p">};</span>
-        <span class="nx">SafeImageZoom</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">get</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">attr</span><span class="p">)</span> <span class="p">{</span>
-            <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="nx">inner</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="nx">attr</span><span class="p">);</span>
-        <span class="p">};</span>
-
-        <span class="c1">//---- 组件是一个构造函数进行初始化的，需要markCtor标记一下，让caja容器认识</span>
-        <span class="nx">frameGroup</span><span class="p">.</span><span class="nx">markCtor</span><span class="p">(</span><span class="nx">SafeImageZoom</span><span class="p">);</span>
-
-
-        <span class="c1">//构造函数实例的方法，需要grantMethod ，加入白名单，没有授权的方法，不可以使用，容器不认识</span>
-        <span class="nx">frameGroup</span><span class="p">.</span><span class="nx">grantMethod</span><span class="p">(</span><span class="nx">SafeImageZoom</span><span class="p">,</span> <span class="s2">&quot;set&quot;</span><span class="p">);</span>
-        <span class="nx">frameGroup</span><span class="p">.</span><span class="nx">grantMethod</span><span class="p">(</span><span class="nx">SafeImageZoom</span><span class="p">,</span> <span class="s2">&quot;get&quot;</span><span class="p">);</span>
-
-        <span class="cm">/**</span>
-<span class="cm">         * @param context 上下文</span>
-<span class="cm">         * @param context.mod 沙箱的模块范围，所有操作必须限定到模块范围之内去执行</span>
-<span class="cm">         * @param context.frame 单个模块的沙箱</span>
-<span class="cm">         * @return {Object} 实际的组件对象</span>
-<span class="cm">         */</span>
-        <span class="k">return</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">context</span><span class="p">)</span> <span class="p">{</span>
-
-            <span class="c1">//最终需要返回给</span>
-            <span class="k">return</span> <span class="p">{</span>
-                <span class="nx">ImageZoom</span><span class="o">:</span> <span class="nx">frameGroup</span><span class="p">.</span><span class="nx">markFunction</span><span class="p">(</span><span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
-
-					<span class="cm">/**</span>
-<span class="cm">					 * 找到模块dom的根节点</span>
-<span class="cm">					 * 追加一个DIV到模块dom的根节点。用于把放大镜放置在这个DIV前面</span>
-<span class="cm">					 * 然后隐藏这个DIV,无其它用处，只用于定位</span>
-<span class="cm">					 */</span>
-					<span class="kd">var</span> <span class="nx">dombody</span> <span class="o">=</span> <span class="nx">KISSY</span><span class="p">.</span><span class="nx">all</span><span class="p">(</span><span class="nx">context</span><span class="p">.</span><span class="nx">mod</span><span class="p">).</span><span class="nx">children</span><span class="p">().</span><span class="nx">item</span><span class="p">(</span><span class="mi">0</span><span class="p">).</span><span class="nx">children</span><span class="p">().</span><span class="nx">item</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
-					<span class="kd">var</span> <span class="nx">placebefore</span><span class="o">=</span><span class="nx">dombody</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="nx">appendChild</span><span class="p">(</span><span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s1">&#39;div&#39;</span><span class="p">));</span>
-					<span class="nx">KISSY</span><span class="p">.</span><span class="nx">all</span><span class="p">(</span><span class="nx">placebefore</span><span class="p">).</span><span class="nx">hide</span><span class="p">();</span>
-
-					<span class="kd">var</span> <span class="nx">config</span> <span class="o">=</span> <span class="nx">arguments</span><span class="p">[</span><span class="mi">0</span><span class="p">];</span>
-					<span class="nx">config</span><span class="o">=</span><span class="p">{</span>
-						<span class="c1">//判断主要用于ISV可以使用selector 或 KISSY.all(&#39;.myimg&#39;)  来设置放大效果</span>
-						<span class="c1">//imageNode: typeof(config.imageNode)==&#39;string&#39; ? DOM.get(config.imageNode,context.mod) : config.imageNode.inner[0],</span>
-						<span class="nx">imageNode</span><span class="o">:</span> <span class="nx">DOM</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="nx">config</span><span class="p">.</span><span class="nx">imageNode</span><span class="p">,</span><span class="nx">context</span><span class="p">.</span><span class="nx">mod</span><span class="p">),</span>
-						<span class="c1">//对齐</span>
-						<span class="nx">align</span><span class="o">:</span><span class="nx">config</span><span class="p">.</span><span class="nx">align</span><span class="o">!=</span><span class="kc">null</span> <span class="o">?</span> <span class="p">{</span>
-								<span class="c1">//node:typeof(config.align.node)==&#39;string&#39; ? DOM.get(config.align.node,context.mod) : config.align.node.inner[0],</span>
-								<span class="nx">node</span><span class="o">:</span><span class="nx">DOM</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="nx">config</span><span class="p">.</span><span class="nx">align</span><span class="p">.</span><span class="nx">node</span><span class="p">,</span><span class="nx">context</span><span class="p">.</span><span class="nx">mod</span><span class="p">),</span>
-								<span class="nx">points</span><span class="o">:</span><span class="nx">config</span><span class="p">.</span><span class="nx">align</span><span class="p">.</span><span class="nx">points</span><span class="p">,</span>
-								<span class="nx">offset</span><span class="o">:</span><span class="nx">config</span><span class="p">.</span><span class="nx">align</span><span class="p">.</span><span class="nx">offset</span>
-							<span class="p">}</span> <span class="o">:</span> <span class="kc">null</span><span class="p">,</span>
-						<span class="nx">type</span><span class="o">:</span><span class="nx">config</span><span class="p">.</span><span class="nx">type</span><span class="p">,</span>
-						<span class="c1">//需要验证url白名单</span>
-						<span class="nx">bigImageSrc</span><span class="o">:</span> <span class="nx">cajaAFTB</span><span class="p">.</span><span class="nx">rewriteURL</span><span class="p">(</span><span class="nx">config</span><span class="p">.</span><span class="nx">bigImageSrc</span><span class="p">,</span> <span class="kc">null</span><span class="p">,</span> <span class="kc">null</span><span class="p">,</span> <span class="p">{</span><span class="nx">XML_ATTR</span><span class="o">:</span> <span class="s2">&quot;href&quot;</span><span class="p">})</span> <span class="o">?</span> <span class="nx">config</span><span class="p">.</span><span class="nx">bigImageSrc</span><span class="o">:</span> <span class="s1">&#39;&#39;</span><span class="p">,</span>
-						<span class="nx">bigImageWidth</span><span class="o">:</span><span class="nx">config</span><span class="p">.</span><span class="nx">bigImageWidth</span><span class="p">,</span>
-						<span class="nx">bigImageHeight</span><span class="o">:</span><span class="nx">config</span><span class="p">.</span><span class="nx">bigImageHeight</span><span class="p">,</span>
-						<span class="nx">width</span><span class="o">:</span><span class="nx">config</span><span class="p">.</span><span class="nx">width</span><span class="p">,</span>
-						<span class="nx">height</span><span class="o">:</span><span class="nx">config</span><span class="p">.</span><span class="nx">height</span><span class="p">,</span>
-						<span class="nx">hasZoom</span><span class="o">:</span><span class="nx">config</span><span class="p">.</span><span class="nx">hasZoom</span><span class="p">,</span>
-						<span class="nx">prefixCls</span><span class="o">:</span> <span class="nx">config</span><span class="p">.</span><span class="nx">prefixCls</span><span class="o">==</span><span class="kc">null</span> <span class="o">?</span> <span class="s1">&#39;imagezoom-&#39;</span><span class="o">:</span> <span class="nx">config</span><span class="p">.</span><span class="nx">prefixCls</span><span class="p">,</span>
-						<span class="nx">elBefore</span><span class="o">:</span><span class="nx">placebefore</span>
-					<span class="p">};</span>
-
-                    <span class="k">return</span> <span class="k">new</span> <span class="nx">SafeImageZoom</span><span class="p">(</span><span class="nx">config</span><span class="p">);</span>
-                <span class="p">}),</span>
-                <span class="nx">kissy</span><span class="o">:</span><span class="kc">true</span>
-            <span class="p">}</span>
-        <span class="p">}</span>
-
+<span class="kd">var</span> <span class="nx">ImageZoom</span> <span class="o">=</span> <span class="nx">KISSY</span><span class="p">.</span><span class="nx">ImageZoom</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">iz</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">ImageZoom</span><span class="p">({</span>
+		<span class="nx">prefixCls</span><span class="o">:</span><span class="s1">&#39;taeapp-myzoom-&#39;</span><span class="p">,</span>
+        <span class="nx">imageNode</span><span class="o">:</span><span class="s1">&#39;.taeapp-standard&#39;</span><span class="p">,</span>
+        <span class="nx">align</span><span class="o">:</span><span class="p">{</span>
+            <span class="nx">node</span><span class="o">:</span> <span class="s1">&#39;.taeapp-standard&#39;</span><span class="p">,</span>
+            <span class="nx">points</span><span class="o">:</span> <span class="p">[</span><span class="s2">&quot;tr&quot;</span><span class="p">,</span><span class="s2">&quot;tl&quot;</span><span class="p">],</span>
+            <span class="nx">offset</span><span class="o">:</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span>
+        <span class="p">},</span>
+		<span class="nx">type</span><span class="o">:</span><span class="s1">&#39;standard&#39;</span><span class="p">,</span>
+        <span class="nx">bigImageSrc</span><span class="o">:</span> <span class="s2">&quot;http://img03.taobaocdn.com/bao/uploaded/i3/T1fftwXf8jXXX7ps79_073021.jpg&quot;</span><span class="p">,</span>
+        <span class="nx">bigImageWidth</span><span class="o">:</span><span class="mi">900</span><span class="p">,</span>
+        <span class="nx">bigImageHeight</span><span class="o">:</span><span class="mi">900</span><span class="p">,</span>
+	    <span class="nx">width</span><span class="o">:</span><span class="mi">300</span><span class="p">,</span>
+		<span class="nx">height</span><span class="o">:</span><span class="mi">300</span><span class="p">,</span>
+		<span class="nx">hasZoom</span><span class="o">:</span><span class="kc">true</span>
     <span class="p">}</span>
+<span class="p">);</span>
 
-    <span class="k">return</span> <span class="nx">init</span><span class="p">;</span>
 
-<span class="p">},</span> <span class="p">{</span>
-    <span class="nx">requires</span><span class="o">:</span> <span class="p">[</span><span class="s1">&#39;imagezoom&#39;</span><span class="p">]</span>
+
+<span class="nx">KISSY</span><span class="p">.</span><span class="nx">Event</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s1">&#39;.taeapp-imgList img&#39;</span><span class="p">,</span><span class="s1">&#39;click&#39;</span><span class="p">,</span><span class="kd">function</span><span class="p">(</span><span class="nx">e</span><span class="p">){</span>
+	<span class="kd">var</span> <span class="nx">data</span> <span class="o">=</span> <span class="nx">KISSY</span><span class="p">.</span><span class="nx">DOM</span><span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="k">this</span><span class="p">,</span> <span class="s1">&#39;data-ks-imagezoom&#39;</span><span class="p">);</span>
+	<span class="nx">iz</span><span class="p">.</span><span class="nx">set</span><span class="p">(</span><span class="s1">&#39;hasZoom&#39;</span><span class="p">,</span> <span class="nx">KISSY</span><span class="p">.</span><span class="nx">DOM</span><span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="k">this</span><span class="p">,</span> <span class="s1">&#39;data-has-zoom&#39;</span><span class="p">));</span>
+	<span class="nx">iz</span><span class="p">.</span><span class="nx">set</span><span class="p">(</span><span class="s1">&#39;imageSrc&#39;</span><span class="p">,</span> <span class="nx">data</span> <span class="o">+</span> <span class="s1">&#39;_310x310.jpg&#39;</span><span class="p">);</span>
+	<span class="k">if</span> <span class="p">(</span><span class="nx">data</span> <span class="o">&amp;&amp;</span> <span class="nx">iz</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s1">&#39;hasZoom&#39;</span><span class="p">))</span> <span class="p">{</span>
+		<span class="nx">iz</span><span class="p">.</span><span class="nx">set</span><span class="p">(</span><span class="s1">&#39;bigImageSrc&#39;</span><span class="p">,</span> <span class="nx">data</span><span class="p">);</span>
+		<span class="nx">iz</span><span class="p">.</span><span class="nx">set</span><span class="p">(</span><span class="s2">&quot;bigImageWidth&quot;</span><span class="p">,</span> <span class="nb">parseInt</span><span class="p">(</span><span class="nx">KISSY</span><span class="p">.</span><span class="nx">DOM</span><span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="k">this</span><span class="p">,</span> <span class="s1">&#39;data-bigimagewidth&#39;</span><span class="p">)));</span>
+		<span class="nx">iz</span><span class="p">.</span><span class="nx">set</span><span class="p">(</span><span class="s2">&quot;bigImageHeight&quot;</span><span class="p">,</span> <span class="nb">parseInt</span><span class="p">(</span><span class="nx">KISSY</span><span class="p">.</span><span class="nx">DOM</span><span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="k">this</span><span class="p">,</span> <span class="s1">&#39;data-bigimageheight&#39;</span><span class="p">)));</span>
+	<span class="p">}</span>
 <span class="p">});</span>
+
+<span class="nx">log</span><span class="p">(</span><span class="s1">&#39;demo js loaded&#39;</span><span class="p">);</span>
 </pre></div>
 </div>
 <p><strong>对应DEMO css的代码</strong></p>
