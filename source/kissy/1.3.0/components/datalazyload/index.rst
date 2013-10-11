@@ -36,8 +36,6 @@ DataLazyload 可以 “揣测” 用户的行为, 当用户想看某个区域时
   * :data:`autoDestroy`
   
 
-
-
 实例方法
 -----------------------------------------------
  
@@ -85,7 +83,7 @@ DataLazyload 可以 “揣测” 用户的行为, 当用户想看某个区域时
 
 .. data:: placeholder
 
-    {String} -   默认为 http://a.tbcdn.cn/kissy/1.0.0/build/imglazyload/spaceball.gif, 如果懒加载图像没有设置 src 则作为图像的占位图..
+    {String} -   默认为 http://a.tbcdn.cn/kissy/1.0.0/build/imglazyload/spaceball.gif, 如果懒加载图像没有设置 src 则作为图像的占位图.
 
 .. data:: execScript
 
@@ -141,11 +139,13 @@ DataLazyload 可以 “揣测” 用户的行为, 当用户想看某个区域时
 静态方法详情
 -----------------------------------------------
  .. method:: loadCustomLazyData
+
     | **static loadCustomLazyData ** (containers, type)
     | 加载自定义延迟数据
 
     Parameters: 
-       containers (HTMLElement[]) – 包含自定义延迟加载项的容器元素type (String) – 延迟加载方式, 可取:
+
+    containers (HTMLElement[]) – 包含自定义延迟加载项的容器元素type (String) – 延迟加载方式, 可取:
     textarea 或 area-data , 即表示延迟加载使用的是 textarea 方式;
     此时 textarea 需要有样式类 ks-datalazyload-custom，禁用脚本，iframe.
 
