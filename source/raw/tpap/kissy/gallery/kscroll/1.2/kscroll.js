@@ -7,29 +7,29 @@ var d = new Kscroll('.d1', {
 	allowArrow: false
 });
 
-S.all("#b1").on("click", function(ev) {
+S.all(".b1").on("click", function(ev) {
 	
 	d.scrollByPercent(0);
 })
-S.all("#b2").on("click", function(ev) {
+S.all(".b2").on("click", function(ev) {
 	
 	d.scrollByPercent(1);
 })
-S.all("#b3").on("click", function(ev) {
+S.all(".b3").on("click", function(ev) {
 	
 	d.scrollByPercent(.5);
 })
-S.all("#b4").on("click", function(ev) {
+S.all(".b4").on("click", function(ev) {
 	
 	d.scrollByDistance(50);
 })
-S.all("#b5").on("click", function(ev) {
+S.all(".b5").on("click", function(ev) {
 	
 	d.scrollByDistance(-50);
 })
-S.all("#b6").on("click", function(ev) {
+S.all(".b6").on("click", function(ev) {
   
-	d.scrollToElement("#p2");
+	d.scrollToElement(".p2");
 });
 
 

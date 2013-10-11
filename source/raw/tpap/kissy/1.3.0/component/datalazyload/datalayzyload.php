@@ -1,3 +1,4 @@
+
 <cajamodules include="kissy/1.3.0/core,kissy/1.3.0/datalazyload" />
 <script src="/kissy/1.3.0/component/datalazyload/datalazyload.js"></script>
 <link href="/kissy/1.3.0/component/datalazyload/datalazyload.css" rel="stylesheet"/>
@@ -5,9 +6,9 @@
 <h1>Datalazyload DEMO</h1>
 
 <div class="demo">
-<div id="container" >
-	<button id="pause">pause</button>
-	<button id="resume">resume</button>	
+<div class="container" >
+	<button class="pause">pause</button>
+	<button class="resume">resume</button>	
 
 	<p>lazy load module when scoll to it or jump to it</p>
 

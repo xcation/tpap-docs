@@ -20,18 +20,18 @@ test1.addCallback(".test1", function() {
 });
 
 var d = new DataLazyload({
-	container: '#container'	
+	container: '.container'	
 });
-S.all('#pause').on('click', function() {
+S.all('.pause').on('click', function() {
 	d.pause();
 });
 
-S.all('#resume').on('click', function() {
+S.all('.resume').on('click', function() {
 	d.resume();
 });
 
 d.on("destroy", function() {
-	S.all('#gap').hide();
+	S.all('.gap').hide();
 });
 
 var test3 = new DataLazyload({

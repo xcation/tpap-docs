@@ -33,7 +33,7 @@
                     111111111111<br>
                     11111111111111<br>
                     11111111111<br>                    
-                    <p id="p2">11111111111111</p>
+                    <p class="p2">11111111111111</p>
                     1111111111111<br>
                     111111111111<br>
                     11111111111111<br>
@@ -54,12 +54,12 @@
     </div>
    </div>
     <div>
-            <button id="b2">bottom</button>
-            <button id="b1">top</button>
-            <button id="b3">50%</button>
-            <button id="b4">up50px</button>
-            <button id="b5">down50px</button>
-            <button id="b6">seek</button>  
+            <button class="b2">bottom</button>
+            <button class="b1">top</button>
+            <button class="b3">50%</button>
+            <button class="b4">up50px</button>
+            <button class="b5">down50px</button>
+            <button class="b6">seek</button>  
             </div>     
 <div class="s-section">
     <div class="s-demo">    
@@ -83,8 +83,7 @@
                     222222222222<br>
                     222222222222<br>
                     22222222222<br>
-                    2222222222222<br>                    
-                    <p id="p">22222222222</p>
+                    2222222222222<br> 
                     222222222222<br>
                     222222222222<br>
                     22222222222<br>
@@ -126,8 +125,7 @@
                     333333333333<br>
                     333333333333<br>
                     333333333333<br>
-                    333333333333<br>                    
-                    <p id="p">333333333</p>
+                    333333333333<br>  
                     333333333333<br>
                     333333333333<br>
                     333333333333<br>
