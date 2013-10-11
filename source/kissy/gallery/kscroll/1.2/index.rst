@@ -130,6 +130,10 @@ demo 代码样例
     .. literalinclude:: /raw/tpap/kissy/gallery/kscroll/1.2/kscroll.js
         :language: javascript
 
+    **对应DEMO css的代码**
 
+    .. literalinclude:: /raw/tpap/kissy/gallery/kscroll/1.2/kscroll.css
+        :language: css
+b
 
 

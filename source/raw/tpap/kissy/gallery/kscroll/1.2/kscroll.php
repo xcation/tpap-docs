@@ -6,7 +6,8 @@
 
 <script src="/kissy/gallery/kscroll/1.2/kscroll.js"></script>
 
-<link rel="stylesheet" href="/assets/scroll.css"/>
+<link rel="stylesheet" href="/kissy/gallery/kscroll/1.2/kscroll.css" />
+
 <link rel="stylesheet" href="http://gallery.kissyui.com/kscroll/1.2/assets/clear.css"/>
 <link rel="stylesheet" href="http://gallery.kissyui.com/kscroll/1.2/assets/nice.css"/>
 <div class="s-section">
