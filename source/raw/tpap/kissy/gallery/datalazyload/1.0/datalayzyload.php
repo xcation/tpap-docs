@@ -64,7 +64,7 @@
                 <textarea class="ks-datalazyload" >module6</textarea>
             </div>
 
-            <div class="gap">demo1懒加载完，会隐藏！</div>
+            <div class="gap">demo1 datalazyload down gap is hidden！</div>
         </div>
         <h2>DEMO2</h2>
         <div class="demo2">
@@ -120,8 +120,8 @@
                 <p>
                     <img src="http://img01.taobaocdn.com/imgextra/i1/14620029131268031/T1GMZBXeRdXXXXXXXX_!!0-item_pic.jpg_250x250.jpg" />
                 </p>
-                安全考虑，禁用了脚本
-                <script>KISSY.log("javascript运行了！");</script>
+                javascript ?
+                <script>KISSY.log("javascript do?");</script>
             </textarea>
         </div>
 

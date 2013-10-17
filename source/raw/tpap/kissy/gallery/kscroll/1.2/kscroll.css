@@ -1,17 +1,7 @@
 .s-section{width: 500px;}
 .d1,.d_nice,.d31{height:300px;overflow:auto} 
 .p2{color:red}
-
-/*轨道*/
-.kscroll-track, .kscroll-track-hover, .kscroll-track-active,
-.kscroll-scrollbar,
-/*向上箭头*/
-.kscroll-arrowup, .kscroll-arrowup-hover, .kscroll-arrowup-active,
-/*向下箭头*/
-.kscroll-arrowdown, .kscroll-arrowdown-hover, .kscroll-arrowdown-active,
-/*拖拽条*/
-.kscroll-drag, .kscroll-drag-hover, .kscroll-drag-active,
-.kscroll-dragtop, .kscroll-dragbottom , .kscroll-dragcenter {
+.kscroll-track, .kscroll-track-hover, .kscroll-track-active,.kscroll-scrollbar,.kscroll-arrowup, .kscroll-arrowup-hover, .kscroll-arrowup-active,.kscroll-arrowdown, .kscroll-arrowdown-hover, .kscroll-arrowdown-active,.kscroll-drag, .kscroll-drag-hover, .kscroll-drag-active,.kscroll-dragtop, .kscroll-dragbottom , .kscroll-dragcenter {
 	width:10px;
 }
 .kscroll-scrollbar {
@@ -21,24 +11,16 @@
     bottom:0;
     background-color:#E3E3E3;
 }
-
 .kscroll-track-hover {
 	background-color:#D9D8D8;
 }
 .kscroll-track-active {
 	background-color:#D9D8D8;
 }
-
 .kscroll-track{
     position:absolute;
 }
-
-
-/*上下箭头 */
-.kscroll-arrowup, 
-.kscroll-arrowdown,
-.kscroll-arrowup a, 
-.kscroll-arrowdown a {
+.kscroll-arrowup, .kscroll-arrowdown,.kscroll-arrowup a, .kscroll-arrowdown a {
 	display:block;
 	text-indent: -1000px;
 	width:8px;
@@ -48,12 +30,9 @@
 	right:0;
     position:absolute;
 }
-
-.kscroll-arrowup a, 
-.kscroll-arrowdown a {
+.kscroll-arrowup a, .kscroll-arrowdown a {
     border:none;
 }
-
 
 .kscroll-arrowup {
 	background-color:#959695;
@@ -66,7 +45,6 @@
 	background-color:#3C7FB1;
 }
 
-
 .kscroll-arrowdown {
 	background-color:#959695;
 	bottom:0;
@@ -78,9 +56,6 @@
 	background-color:#3C7FB1;
 }
 
-
-
-/*拖拽条*/
 .kscroll-drag{
 	background-color:#979797;
 	position:absolute;
@@ -98,13 +73,211 @@
 	background-color::#18598A;
 }
 
-/*------------*/
 .kscroll-drag-hover{
 	background-color:#9CCAE3;
 }
 
-/*------------*/
 .kscroll-drag-active{
 	background-color:#3C7FB1;
 }
 
+.clear-track, .clear-track-hover, .clear-track-active,.clear-scrollbar,.clear-arrowup, .clear-arrowup-hover, .clear-arrowup-active,.clear-arrowdown, .clear-arrowdown-hover, .clear-arrowdown-active,.clear-drag, .clear-drag-hover, .clear-drag-active,.clear-dragtop, .clear-dragbottom , .clear-dragcenter {
+	width:9px;
+	background-image:url(http://img01.taobaocdn.com/tps/i1/T1nTCUXldiXXXXXXXX.png);
+	background-repeat:repeat-y;
+}
+
+.clear-scrollbar {
+    position:absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    background-position:-18px 0;
+}
+.clear-track-hover {
+	background-position:-27px 0;
+}
+.clear-track-active {
+	background-position:-27x 0;
+}
+
+.clear-track{
+    position:absolute;
+    background-image:none;
+}
+.clear-arrowup, .clear-arrowdown,.clear-arrowup a, .clear-arrowdown a {
+	display:block;
+	text-indent: -1000px;
+	width:9px;
+	height:2px;
+	overflow:hidden;
+	right:0;
+    position:absolute;
+}
+
+.clear-arrowup {
+	background-position:0 0;
+	top:0;
+}
+.clear-arrowup-hover {
+	background-position:-9px 0;
+}
+.clear-arrowup-active {
+	background-position:-9px 0;
+}
+
+.clear-arrowdown {
+	background-position:0 -18px;
+	bottom:0;
+}
+.clear-arrowdown-hover {
+	background-position:-9px -18px;
+}
+.clear-arrowdown-active {
+	background-position:-9px -18px;
+}
+
+.clear-drag{
+	width:9px;
+	background-position:-54px 0;
+	position:absolute;
+}
+
+.clear-drag .clear-dragtop{
+	position:absolute;
+	top:0px;
+	width:9px;
+	height:4px;
+	overflow:hidden;
+	background-position:-72px 0;
+}
+
+.clear-drag .clear-dragbottom{
+	position:absolute;
+	top:100%;
+	margin-top:-4px;
+	width:9px;
+	height:5px;
+	overflow:hidden;
+	background-position:-72px -4px;
+}
+
+.clear-drag .clear-dragcenter{
+	position:absolute;
+	top:50%;
+	margin-top:-10px;
+	width:9px;
+	height:20px;
+	background-position:-63px 0;
+}
+
+.clear-drag-hover{
+	background-position:-81px 0;
+}
+
+.clear-drag-hover .clear-dragtop{
+	background-position:-99px 0;
+}
+
+.clear-drag-hover .clear-dragbottom{
+	background-position:-99px -4px;
+}
+
+.clear-drag-hover .clear-dragcenter{
+	background-position:-90px 0;
+}
+
+
+.clear-drag-active{
+	background-position:-81px 0;
+}
+
+.clear-drag-active .clear-dragtop{
+	background-position:-99px 0;
+}
+
+.clear-drag-active .clear-dragbottom{
+	background-position:-99px -4px;
+}
+
+.clear-drag-active .clear-dragcenter{
+	background-position:-90px 0;
+}
+
+.nice-track,.nice-arrowup,.nice-arrowdown,.nice-drag,.nice-scrollbar,.nice-dragtop, .nice-dragbottom, .nice-dragcenter {
+    width:15px;
+}
+
+.nice-scrollbar {
+    position:absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    background-image:url(nice/middle.png);   
+    background-repeat:repeat-y;
+}
+
+.nice-track { 
+    z-index:10;
+    position:absolute;
+}
+
+.nice-arrowup, .nice-arrowdown {
+    text-indent: -1000px;
+    height:14px;
+    position:absolute;
+}
+
+.nice-arrowdown a{
+    margin-top:-10px;
+} 
+
+.nice-arrowup a, .nice-arrowdown a{
+    display:block;
+    height:24px;
+    background-repeat:no-repeat;
+}
+
+.nice-arrowup a{
+    background-image:url(nice.png);
+    background-position: -125px 0px;
+   
+}
+.nice-arrowup{
+     top:0;
+}
+
+.nice-arrowdown {
+     bottom:0;
+}
+
+.nice-arrowdown a{
+    background-image:url(nice.png);
+   background-position: -75px 0px;
+}
+
+.nice-drag,.nice-dragtop, .nice-dragbottom, .nice-dragcenter{
+    position:absolute;
+}
+
+.nice-dragtop{    
+    top:0px;
+    height:10px;
+    background-image:url(nice.png); 
+    background-position: -50px 0px;
+}
+
+.nice-dragbottom{
+    position:absolute;
+    bottom:0px;
+    height:10px;
+    background-image:url(nice.png);
+    background-position: 0px 0px;
+}
+
+.nice-dragcenter{
+    top:10px;
+    bottom:10px;
+    background-image:url(nice/bar_middle.png);  
+    background-repeat:repeat-y; 
+}

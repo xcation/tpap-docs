@@ -3,13 +3,9 @@
 
 <!--refer js file-->
 <script src="/assets/javascripts/log.js"></script>
-
 <script src="/kissy/gallery/kscroll/1.2/kscroll.js"></script>
-
 <link rel="stylesheet" href="/kissy/gallery/kscroll/1.2/kscroll.css" />
-
-<link rel="stylesheet" href="http://gallery.kissyui.com/kscroll/1.2/assets/clear.css"/>
-<link rel="stylesheet" href="http://gallery.kissyui.com/kscroll/1.2/assets/nice.css"/>
+<div style="width:500px;margin:0 auto;" class="my">
 <div class="s-section">
     <div class="s-demo">
         <div class="box">
@@ -139,9 +135,8 @@
                     333333333333<br>
                     333333333333<br>
                 </div> 
-            </div>
-        
+            </div>        
         </div>
-
     </div>
+</div>
 </div>

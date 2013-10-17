@@ -16,7 +16,7 @@ KISSY.all('.resume').on('click', function() {
 	d.resume();
 });
 
-//加载完，调用
+//datalazyload done do 
 d.on("destroy", function() {
 	KISSY.all('.gap').hide();
 });
@@ -44,7 +44,7 @@ test1.addCallback(".demo1", function() {
 
 
 
-//demo4 test javascrpt iframne 是否允许
+//demo4 test javascrpt iframne 
 var test3 = new DataLazyload({
 	container: '.demo4',
 	diff: 50	
